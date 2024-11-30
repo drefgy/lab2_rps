@@ -3,6 +3,6 @@
 #include <locale>
 #include <vector>
 
-void greeting();
-void showMenu();
+void greeting(); // Вывод приветствия
+void showMenu(); // Меню выполнения программы
 
