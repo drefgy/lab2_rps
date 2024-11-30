@@ -38,7 +38,7 @@ void inputArray(vector<int>& array) {
         size = inputInt();
     }
     if (size > maxSize) {
-        cout << "Размер массива не должен превышать" << maxSize <<". Пожалуйста, повторите ввод: ";
+        cout << "Размер массива не должен превышать " << maxSize <<". Пожалуйста, повторите ввод: ";
         size = inputInt();
     }
     array.resize(size);
@@ -67,7 +67,7 @@ void randomArray(vector<int>& array) {
         size = inputUnsignedLong();
     }
     if (size > maxSize) {
-        cout << "Размер массива не должен превышать" << maxSize <<". Пожалуйста, повторите ввод: ";
+        cout << "Размер массива не должен превышать " << maxSize <<". Пожалуйста, повторите ввод: ";
         size = inputInt();
     }
     array.resize(size);
