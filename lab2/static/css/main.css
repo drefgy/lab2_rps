@@ -1,169 +1,170 @@
-
+/* Стиль для фиксированного заголовка */
 .header {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    background-color: white; 
-    text-align: center; 
-    padding: 40px 0; 
-    font-size: 25px; 
-    z-index: 1000; 
+    position: fixed; /* фиксированное позиционирование */
+    top: 0; /* прикрепляем к верхней части страницы */
+    left: 0; /* прикрепляем к левой части страницы */
+    width: 100%; /* ширина на всю страницу */
+    background-color: white; /* фон шапки */
+    text-align: center; /* центрируем */
+    padding: 40px 0; /* отступы сверху и снизу */
+    font-size: 25px; /* размер постоянного заголовка */
+    z-index: 1000; /* чтобы заголовок был выше других элементов */
 }
 
-
+/* Стиль для фиксированного подзаголовка */
 .subheader {
-    position: fixed; 
-    top: 40px; 
-    left: 0; 
-    width: 100%; 
-    background-color: white; 
-    text-align: center; 
-    padding: 5px 0; 
-    font-size: 18px; 
-    z-index: 999; 
+    position: fixed; /* фиксированное позиционирование */
+    top: 40px; /* смещение вниз на высоту заголовка */
+    left: 0; /* прикрепляем к левой части страницы */
+    width: 100%; /* ширина на всю страницу */
+    background-color: white; /* фон подзаголовка */
+    text-align: center; /* центрируем */
+    padding: 5px 0; /* отступы сверху и снизу */
+    font-size: 18px; /* размер подзаголовка */
+    z-index: 999; /* чтобы подзаголовок был ниже заголовка */
 }
 
 
 main {
-    padding-top: 80px; 
+    padding-top: 80px; /* отступ от шапки, учитывающий высоту header и subheader */
 }
 
 body {
-    background-color: white; 
-    margin: 0; 
-    font-family: Arial, sans-serif; 
+    background-color: white; /* Цвет фона для всего проекта */
+    margin: 0; /* Убираем отступы по краям */
+    font-family: Arial, sans-serif; /* Шрифт для всего текста */
 }
 
-
+/* Стиль для заголовков h1 в основном контенте */
 main h1 {
-    margin-top: 50px; 
-    font-size: 20px; 
+    margin-top: 50px; /* отступ сверху, учитывающий высоту header и subheader */
+    font-size: 20px; /* размер заголовка */
 }
 
 h1 {
-    text-align: center; 
-    font-size: 2.5em; 
-    margin-bottom: 10px; 
+    text-align: center; /* Центрируем заголовок */
+    font-size: 2.5em; /* Размер шрифта заголовка */
+    margin-bottom: 10px; /* Отступ снизу */
 }
 
 .container {
-    width: 100%; 
-    padding: 20px; 
-    background-color: white; 
-    border-radius: 5px; 
+    width: 100%; /* Ширина контейнера на всю ширину экрана */
+    padding: 20px; /* Отступы внутри контейнера */
+    background-color: white; /* Белый фон для контейнера */
+    border-radius: 5px; /* Закругленные углы контейнера */
 }
 
 .form-container {
-    max-width: 500px; 
-    margin: 0 auto; 
-    padding: 20px; 
-    background-color: white;  
-    border-radius: 5px; 
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Максимальная ширина формы */
+    margin: 0 auto; /* Центрирование формы */
+    padding: 20px; /* Отступы внутри формы */
+    background-color: white; /* Белый фон формы */
+    border-radius: 5px; /* Закругленные углы формы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Легкая тень для эффекта */
 }
 
 
-
+/* Главная страница */
 .array-container {
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 20px;
+    max-width: 800px; /* Максимальная ширина контейнера массива */
+    margin: 0 auto; /* Центрируем контейнер массива */
+    padding: 20px; /* Отступы внутри контейнера массива */
 }
 
 .array-item {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 0; 
-    border-bottom: 1px solid #ddd; 
+    display: flex; /* Используем flexbox для выравнивания */
+    justify-content: space-between; /* Разделяем элементы по краям */
+    align-items: center; /* Вертикальное выравнивание по центру */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    border-bottom: 1px solid #ddd; /* Разделительная линия между элементами */
 }
 
 .array-item:last-child {
-    border-bottom: none; 
+    border-bottom: none; /* Убираем разделитель у последнего элемента */
 }
 
 .array-data {
-    flex-grow: 1; 
+    flex-grow: 1; /* Позволяем этому элементу занимать доступное пространство */
 }
 
 .edit-button {
-    background-color: #0056b3; 
-    color: white; 
-    padding: 5px 10px; 
-    text-decoration: none; 
-    border-radius: 3px; 
+    background-color: #0056b3; /* Цвет фона кнопки редактирования */
+    color: white; /* Цвет текста кнопки редактирования */
+    padding: 5px 10px; /* Отступы внутри кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 3px; /* Закругленные углы кнопки */
     font-family: 'Roboto', sans-serif;
 
 }
 
 .add-button {
-    display: inline-block; 
-    width: 96%; 
-    padding: 10px; 
-    margin-top: 10px; 
-    background-color: #0056b3; 
-    color: white; 
-    border: none;
-    text-decoration: none;
-    border-radius: 3px; 
-    font-size: 1em; 
-    cursor: pointer; 
-    font-family: 'Roboto', sans-serif; 
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    width: 96%; /* Полная ширина кнопки */
+    padding: 10px; /* Отступы внутри кнопки */
+    margin-top: 10px; /* Отступ сверху */
+    background-color: #0056b3; /* Нейтральный цвет фона кнопки */
+    color: white; /* Цвет текста кнопки - черный */
+    border: none; /* Убираем рамку */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    border-radius: 3px; /* Закругленные углы кнопки */
+    font-size: 1em; /* Размер шрифта кнопки */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+    font-family: 'Roboto', sans-serif; /* Устанавливаем шрифт Roboto для кнопки */
 }
 
 .add-button-container {
-    text-align: center;
-    margin-top: 20px; 
+    text-align: center; /* Центрирование содержимого */
+    margin-top: 20px; /* Отступ сверху */
 }
 
-
+/* Редактирование */
 .form-button {
-    display: inline-block; 
-    width: 100%;
-    padding: 10px; 
-    margin-top: 10px; 
-    background-color: #0056b3; 
-    color: white; 
-    border: none; 
-    border-radius: 3px; 
-    font-size: 1em; 
-    cursor: pointer; 
-    font-family: 'Roboto', sans-serif; 
+    display: inline-block; /* Делаем кнопку блочным элементом */
+    width: 100%; /* Полная ширина кнопки */
+    padding: 10px; /* Отступы внутри кнопки */
+    margin-top: 10px; /* Отступ сверху */
+    background-color: #0056b3; /* Нейтральный цвет фона кнопки */
+    color: white; /* Цвет текста кнопки - черный */
+    border: none; /* Убираем рамку */
+    border-radius: 3px; /* Закругленные углы кнопки */
+    font-size: 1em; /* Размер шрифта кнопки */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+    font-family: 'Roboto', sans-serif; /* Устанавливаем шрифт Roboto для кнопки */
 }
 
 .form-input {
-    width: 96%;
-    padding: 10px; 
-    margin-bottom: 15px;
-    border: 1px solid #ccc; 
-    border-radius: 3px; 
-    font-size: 1em; 
+    width: 96%; /* Полная ширина поля ввода */
+    padding: 10px; /* Отступы внутри поля ввода */
+    margin-bottom: 15px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Цвет рамки поля ввода */
+    border-radius: 3px; /* Закругленные углы поля ввода */
+    font-size: 1em; /* Размер шрифта */
 }
 
 .form-input:focus {
-    border-color: #007bff; 
-    outline: none; 
+    border-color: #007bff; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартный контур */
 }
 
 .flashes {
-    margin-top: 20px; 
-    list-style-type: none; 
-    padding: 0; 
-    text-align: center; 
-    font-family: 'Roboto', sans-serif; 
+    margin-top: 20px; /* Отступ сверху для сообщений */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: 'Roboto', sans-serif; /* Устанавливаем шрифт Roboto */
 }
 
 .flashes li {
-    margin-bottom: 10px;
-    font-size: 16px; 
+    margin-bottom: 10px; /* Отступы между сообщениями */
+    font-size: 16px; /* Размер шрифта */
 }
 
 .success {
-    color: green; 
+    color: green; /* Цвет текста для успешных сообщений - зеленый */
 }
 
 .error {
-    color: red; 
+    color: red; /* Цвет текста для сообщений об ошибках - красный */
 }
+
 
