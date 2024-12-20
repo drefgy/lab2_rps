@@ -7,7 +7,7 @@ BASE_URL = "http://127.0.0.1:5000"
 
 def generateRandomArray():
     size = random.randint(1, 100)  # Генерируем случайный размер массива
-    return [random.randint(1, 1000) for _ in range(size)]  # Генерируем случайные числа
+    return [random.randint(-100, 100) for _ in range(size)]  # Генерируем случайные числа
 
 def addArrays(self, numArrays):
     startTime = time.time()
