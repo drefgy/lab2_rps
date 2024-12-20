@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Редактирование массива</h1>
+
+    <form method="POST" class="form-container">
+        <input type="text" name="array" placeholder="Введите числа через пробел" value="{{ currentArray }}" required class="form-input">
+
+        <button type="submit" class="form-button">Сохранить</button>
+        <button type="submit" name="sort" class="form-button">Отсортировать</button>
+        <button type="submit" name="delete" class="form-button">Удалить</button>
+
+        <a href="{{ url_for('mainPage') }}" style="display: block; text-align: center; margin-top: 20px;">Назад к списку</a>
+    </form>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        {% endwith %}
+
+</div>
+{% endblock %}
